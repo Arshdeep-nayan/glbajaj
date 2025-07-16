@@ -77,11 +77,3 @@ def process_command(command):
         webbrowser.open(f"https://www.google.com/search?q={command.replace(' ', '+')}")
         speak(f"I found some information for {command} on Google")
 
-if __name__ == "__main__":
-    speak("Initializing JARVIS...")
-    wish_me()
-
-    while True:
-        command = take_command()
-        if command and command != "None":
-            process_command(command)
