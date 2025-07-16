@@ -3,7 +3,7 @@ import speech_recognition as sr
 import webbrowser
 from datetime import datetime
 
-engine = pyttsx3.init();
+engine = pyttsx3.init()
 
 def speak(text):
     """Convert text to speech."""
