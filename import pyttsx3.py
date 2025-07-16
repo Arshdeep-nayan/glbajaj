@@ -10,7 +10,16 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 
+def wish_me():
+    """Wish the user based on the current time."""
+    hour = datetime.now().hour
 
+    if 0 <= hour < 12:
+        speak("Good Morning Boss...")
+    elif 12 <= hour < 17:
+        speak("Good Afternoon Master...")
+    else:
+        speak("Good Evening Sir...")
 
 def take_command():
     """Listen for a voice command and return it as text."""
