@@ -75,7 +75,7 @@ def process_command(command):
         speak("You may close the tab...")
     else:
         webbrowser.open(f"https://www.google.com/search?q={command.replace(' ', '+')}")
-        speak(f"I found some information for {command} on Google")
+        speak(f"I found some information for {command} on Google"
 
 if __name__ == "__main__":
     speak("Initializing JARVIS...")
