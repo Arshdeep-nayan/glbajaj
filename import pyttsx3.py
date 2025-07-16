@@ -5,10 +5,7 @@ from datetime import datetime
 
 engine = pyttsx3.init()
 
-def speak(text):
-    """Convert text to speech."""
-    engine.say(text)
-    engine.runAndWait()
+
 
 def wish_me():
     """Wish the user based on the current time."""
